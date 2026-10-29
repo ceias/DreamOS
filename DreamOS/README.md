@@ -3,7 +3,7 @@
 ## Project identity
 **Dream OS** is a **C# .NET Windows Forms (WinForms)** desktop application for Visual Studio on Windows. It is a *simulation of a cute Windows 95/98-style mini operating system*, NOT a real bootable OS and NOT a website. It houses the classroom Visual Basic machine-problem exercises as functional C# Windows Forms.
 
-**Do not use React, TypeScript, HTML, CSS, JavaScript, Electron, WPF, MAUI, or webviews.** Implement with `System.Windows.Forms`, `System.Drawing`, and ordinary C# classes. Target **.NET 8 (Windows)** or the version required by the instructor; avoid third-party UI frameworks. Solution must open in Visual Studio on Windows.
+**Do not use React, TypeScript, HTML, CSS, JavaScript, Electron, WPF, MAUI, or webviews.** Implement with `System.Windows.Forms`, `System.Drawing`, and ordinary C# classes. Target **.NET 10 (Windows)** or the version required by the instructor; avoid third-party UI frameworks. Solution must open in Visual Studio on Windows.
 
 ## What the assets are
 - `01_Design_Board`: full Dream OS pastel/Y2K concept sheet.
@@ -48,7 +48,7 @@ The last two are a linked exercise: Password Entry opens the Appliance Store Tra
 - Electon/tally and auth are demonstrations only; local test data must not be presented as real public results/security.
 
 ## Architecture and OOP expectations
-- WinForms project `DreamOS.WinForms` targeting `net8.0-windows` with `<UseWindowsForms>true</UseWindowsForms>`.
+- WinForms project `DreamOS.WinForms` targeting `net10.0-windows` with `<UseWindowsForms>true</UseWindowsForms>`.
 - Plain C# model/service classes in `Models/`, `Services/`, `Data/` (separated from Forms and user controls), so calculations are **not** hardcoded into click event handlers.
 - Encapsulation: private fields/validated properties; abstraction: service interfaces where useful; inheritance: `RetroWindowForm : Form` and shared control types; polymorphism: `IPricingRule` or `IPaymentCalculation` implemented by cash/charge payment rule classes. **Do not force inheritance where composition is clearer.**
 - Data can be in-memory plus JSON files via `System.Text.Json` under user AppData for settings, notes and demo tallies. **Database optional**; no need for PostgreSQL or SQL Server for offline coursework unless required by teacher. No plaintext real passwords; demo authentication only.

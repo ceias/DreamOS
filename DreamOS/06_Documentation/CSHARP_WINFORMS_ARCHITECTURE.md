@@ -1,7 +1,7 @@
 # C# WINFORMS IMPLEMENTATION BLUEPRINT
 
 ## Native technology
-- Visual Studio 2022 or later, Windows, C# and Windows Forms App targeting `net8.0-windows`.
+- Visual Studio 2026 with .NET 10 support, Windows, C# and Windows Forms App targeting `net10.0-windows`.
 - Avoid web frameworks and third-party UI kits unless instructor permits.
 - Project is a visual simulation of an OS inside one native Windows app, not a kernel or virtual machine.
 
